@@ -1,0 +1,80 @@
+.clock {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    background: #ccc;
+    .digital-clock {
+      padding: 10px;
+    }
+    .analog-clock {
+      width: 100px;
+      height: 100px;
+      border: solid 1px #000;
+      border-radius: 50%;
+      position: relative;
+      background: #fff;
+      .dial {
+        position: absolute;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        transform-origin: bottom left;
+        &.seconds {
+          border-left:solid 1px green;
+        }
+        &.minutes {
+          border-left:solid 1px #cc0000;
+        }
+        &.hours {
+          width: 35px;
+          height: 35px;
+          top: 15px;
+          border-left:solid 2px #000;
+        }
+      }
+    }
+  }
+.close-icon{
+    display: none;
+    cursor: pointer;
+}
+.clock:hover {
+    box-shadow: 0px 10px 15px 0px #888888;
+}
+.clock:hover .close{
+    display: block;
+}
+  .close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top:7px;
+    width: 25px;
+    height: 25px;
+    opacity: 0.3;
+    display: none;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 50px;
+    nav-up: 400px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(255, 0, 0);
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}

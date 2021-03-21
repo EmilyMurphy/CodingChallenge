@@ -1,0 +1,28 @@
+.box{
+    margin-bottom: 10px;
+  }
+.field {
+    width: 65%;
+    height: 56px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s all;
+  }
+
+.list{
+  width: 65%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.3s all;
+}
+.item{
+  width: 65%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.3s all;
+}
