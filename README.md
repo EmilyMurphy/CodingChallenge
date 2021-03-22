@@ -1,11 +1,18 @@
 ReactJS was used for this project.
 
-For the Form section, functional components were used with React Hooks to manage the state. The Form component is used as a Parent passing props to the child (Preview) component to display the list of inputs.
+For the Form section, functional components were used with React Hooks to manage the state. The Form component is used as a Parent passing props to the child (Preview) component to display the list of inputs. The approach taken here was to focus on functionality rather than adding validation or styling which would have taken unnessary time away from the more difficult challenge Datetime. 
 
 For the DateTime section, React Class components were used with moment-timezone for the list of timezone names. Both a Digital and analogue clock is display when a time zone is selected with the date also displayed. Using setInterval to re-render the times every second.
 A delete button was added to the datetime components to remove from the Main page.
+The approach taken here was to focus on getting the funtionality working the DateTime component then focus on getting the timezone from moment-timezone as prop that can be sent to the child components. A dropdown of timezone names was added for the user to select from. After getting the functionality to work, some styling was added for an analogue clock to also display the live time.
 
-Simple React Router was used to route between the two projects.
+A simple React Router was used to route to the two sections.
+
+Test coverage was mentioned as important but because of time constraints I focused on getting the app to work before worrying about writing unit tests for each component.
+If a testing framework was to be added I would use Jest. 
+
+Any issues found were noted during manual testing to be fixed.
+
 
 Overall requirements:
 
@@ -30,6 +37,10 @@ Difficult:
 -	All DateTime components should be showing live time running in that time zone.
 -	Bonus points for the ability to remove a DateTime component from the page by hovering and hitting a close button.
 -	No duplicate components should be added. The user should be notified if they try to add the same timezone twice.
+
+# Use command 'NPM Install' for the dependencies
+
+# Use command 'Npm start' to run the app.
 
 # Getting Started with Create React App
 
